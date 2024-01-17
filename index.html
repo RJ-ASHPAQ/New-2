@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Travel</title>
+    <style>
+        body{
+
+font-family: 'Open Sans', sans-serif;
+padding: 0px 20px;
+}
+
+.head-img{
+    display: flex;
+}
+nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav > ul{
+            display: flex;
+
+        }
+        nav  li {
+            list-style: none;
+            margin-right: 30px;
+            font-weight: 400;
+
+        }
+        nav li a{
+            text-decoration: none;
+        }
+        nav li .home{
+            /*text-decoration: none;*/
+            color: chocolate;
+        }
+        .nav-title{
+            font-size: 25px;
+            font-weight: 700;
+        }
+        .travel{
+            color: red;
+        }
+        .blog{
+            width: 1190px;
+            height: 500px;
+    background-image: url(Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-repeat: no-repeat;
+  color: white;
+   text-align: center;
+   padding: 16px 30px;
+   
+   
+   
+   
+   /* background-size: cover;
+   /* background-position: center;*/
+        }
+    .btn-primary{
+        background-color: red;
+    border-radius: 5px;
+    border: 0;
+    align-content: center;
+     color: bisque;
+     padding: 13px 40px;
+     cursor: pointer;
+    }
+    .subscribe{
+        background-color: red;
+    border-radius: 3px;
+    border: 0;
+    align-content: center;
+     color:white;
+     font-size: 20px;
+    font-style: normal;
+    
+     padding: 13px 208px;
+    }
+.content{
+    display: flex;
+    margin-top: 58px;
+    gap: 112px;
+
+}
+.div{
+    text-align: center;
+    margin-top: 70px;
+}
+.country{
+    display: flex;
+max-width: 1170px;
+    
+}
+ .country-1{
+background-image: url(Images/Rectangle\ 5.png);
+width: 100%;
+height: 100%;
+color: white;
+
+background-repeat: no-repeat;
+}
+.desh{
+    text-align: center;
+    padding: 100px;
+}
+.country-2{
+    background-image: url(Images/Rectangle\ 8.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+.srilanka{
+    background-image: url(Images/Rectangle\ 6.png);
+    color: white;
+    
+    width: 2000px;
+    height: 350px;
+    background-repeat: no-repeat;
+
+}
+.north-america{
+background-image: url(Images/Rectangle\ 7.png);
+color: white;
+width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+.kasmir{
+    background-image: url(Images/Rectangle\ 9.png);
+    color: white;
+    width: 100%;
+    height: 100%;
+    
+    background-repeat: no-repeat;
+
+}
+.bangladesh{
+    background-image: url(Images/Rectangle\ 11.png);
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+
+}
+.bandorbon{
+    background-image: url(Images/Rectangle\ 10.png);
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+.three-country{
+
+gap: 30px;
+width: 1170px;
+    
+display: grid;
+grid-template-areas: repeat(3 , 1fr 2fr 1fr);
+
+display: flex;
+
+margin-top: 15px;
+}
+
+.two-country{
+    display: flex;
+   /* gap: 45px;*/
+    margin-top: 15px;
+}
+
+ .description {
+    color: cadetblue;
+  }  
+    .choose-us{
+        text-align: center;
+        margin-top: 50px;
+        
+    }
+    
+    .hotels{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        margin-top: 31px;
+        
+
+    } 
+.handpicked{
+    background-color: beige;
+    padding: 25px;
+    
+    border-radius: 9px;
+}
+.world{
+    background-color: aqua;
+    padding: 25px;
+    border-radius:9px ;
+}
+.best{
+    
+    text-align:center;
+    
+    background-color: azure;
+    border-radius: 9px;
+    bottom: 400px;
+    margin-left: 290px;
+    margin-right: 200px;
+    margin-top: 20px;
+    padding: 15px 25px;
+}
+.banner{
+    margin-top: 50px;
+    text-align: center;
+}
+.img-edit{
+    background-image: url(Images/Group\ 39.png);
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 500px;
+    padding: 16px;
+    
+}
+.img-editor{
+    background-image: url(Images/Group\ 40.png);
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 500px;
+    padding: 16px;
+}
+/*.banner-1{
+    height: -1000px;
+}*/
+.inner{
+    border-radius: 10px;
+    width: 50%;
+    bottom: 300px;
+}
+.repalace{
+    margin-top: 30px;
+    display: flex;
+    
+    gap: 20px;
+}
+.bd img{
+    height: 400px;
+width:700px ;
+    
+}
+.letter{
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+
+}
+.newsletter{
+    border: 1px solid red;
+    width: 490px;
+    height: 375px;
+    padding: 10px;
+    
+}
+.contact input {
+
+
+
+
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px 167px;
+    background-color: lightcyan;
+border-radius: 4px;
+border: 0;
+align-items: baseline;
+}
+inpu{
+    margin-bottom: 15px;
+    padding: 10px 167px;
+    border: 0;
+    border-radius: 4px;
+    background-color: red;
+    
+}
+.docs{
+    background-image: url(Images/Rectangle\ 8\ \(1\).png);
+    width:620px ;
+    height: 343px;
+    padding-left: 500px;
+    padding: 350px 500px;
+    background-repeat: no-repeat;
+    
+}
+.docs img{
+width: 100%;
+height: 100%;
+    
+}
+.propet{
+    text-align: center;
+    background-color: azure;
+    margin-top: 25px;
+
+}
+.consapt{
+    padding-left:470px;
+}
+.figure{
+    width: 39%;
+    height: 45%;
+margin-left: 550px;
+padding:25px 20px;
+padding-top: 30px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+.primary{
+    color: brown;
+}
+.figure-2{
+    width: 39%;
+    height: 45%;
+margin-left: 50px;
+padding:25px 20px;
+padding-top: 30px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+    .red{
+    
+        color:white;
+        background-color: red;
+        border-radius: 5px;
+        border: 0;
+        width: 110px;
+        height: 40px;
+        transform: rotate(-25deg)
+    
+    }
+
+    @media screen and (max-width:576px){
+
+        header{
+            padding: 20px;
+        }
+        nav{
+            flex-direction: column;
+        }
+        .blog{
+            width: 440px;
+            height: 300px;
+            padding: 11px;
+        }
+        .content{
+            flex-direction: column;
+        }
+        .container-2{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            width: 90%;
+        
+        }
+        .country{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 10px;
+        }
+        .three-country{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+        .two-country{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);y
+            gap: 10px;
+        }
+        .hotels{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+        .best{
+            flex-direction: column;
+            width: 365px;
+            height: 160px;
+            margin-left: 2px;
+            margin-right: 10px;
+        }
+        .repalace{
+            flex-direction: column;
+            
+        }
+.bd img{
+    width: 400px;
+    height: 400px;
+}
+.letter{
+    flex-direction: column;
+
+    
+
+}
+.newsletter{
+    width: 490px;
+    height: 300px;
+}
+.docs {
+    width:20px ;
+    height: 43px;
+    margin-right: 1000px;
+
+}
+.head-img img{
+margin-right: 56px;
+}y
+.bandorbon{
+    margin-top: 10px;
+}
+.consapt{
+    margin-right:178pxs;
+}
+    
+    flex-direction: column;
+
+    
+
+}
+.newsletter{
+    width: 490px;
+    height: 300px;
+}
+.docs {
+    width:20px ;
+    height: 43px;
+    margin-right: 1000px;
+
+}
+.head-img img{
+margin-right: 56px;
+}y
+.bandorbon{
+    margin-top: 10px;
+}
+.consapt{
+    margin-right:178pxs;
+}
+    
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="head-img">
+            <img src="Images/Group 40071 (2).png" alt="">
+    <h3 class="nav-title">  Hero <span class="travel">Travel</span></h3>
+    </div>
+    <ul class="nav-contain">
+        <li><a href=""><span class="home">Home</span></a></li>
+        <li><a href="">Packages</a></li>
+        <li><a href="">Testimonial</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+    
+    </nav>
+    <section class="blog">
+        <h1>Explore Your Travel</h1>
+        <p> dolor sit amet consectetur. adipisicing elit.Nullam suspendisse vitae ultricies dolor adipisicing.In et odio <br>enim ac quis sapien urna eu phasellus.</p>
+        <div class="click">
+            <input type="Where go">
+            <select name="When" id="">When</select>
+            <select name="Select Type " id="">Select Type</select>
+            <option value="Find Now">Find Now</option>
+            </div>
+    </section>
+    <Main>
+        <section class="content">
+        <div class="container-1">
+        <h1>Our Popular Tours</h1>
+        <p class="description">Dolor sit amet consecteture. Diam volutpat neque habitasse pharetra odio sit <br> massa.Sodales dictumst nec nibh pellentesque.</p>
+            
+            
+            <ul class="description">
+               <li>Tempus euismod lacus mauris dignissim quis in ultricies.Magna<br> nullam odio neque diam.Sociis erat at.</li>
+
+
+               <li>adipisicing ornare pellentesque mauris volutpat tortor vitae platea<br> porta lacus.Lectus suspendisse nullam</li>
+
+
+               <li>Accumsan eget et turpis prasent lorem egestas enim elit <br> bibendum.Risus at in.</li> 
+                </ul>
+
+               <p class="description"> Amet consectetur.Vulputate commodo felis molestie risus<br> ornare nulla amet et.Libero commodo sagittis dignissim adipiscing quis.<br> habitasse adipiscing risus natoque aliquet.Id bibendum nunc senectus<br> semper tincidut</p>
+                </p>
+
+                <button class="btn-primary">Read More</button>
+                </div>
+                <div class="container-2">
+                    <img src="Images/Rectangle 4.png" alt="">
+                </div>
+                </section>
+
+                <div class="div">
+                    <h1>Choose Your Destination</h1>
+                    <p class="description">dolor sit amet consectetur.Diam volutpat neque habitasse pharetra odio sit massa.<br> Sodales dictumst nec nibh pellentesque.</p>
+                </div>
+                
+                <div class="country">
+                    <div class="country-1">
+                        <h1 class="desh">Maldives</h1>
+                    </div>
+                    <div class="country-2">
+                        <h1 class="desh">Indonesia</h1>
+                    </div>
+                </div>
+                <div class="three-country">
+                    <div class="srilanka">
+                        <h1 class="desh">Srilanka</h1>
+                    </div>
+                    <div class="north-america">
+                        <h1 class="desh">North America</h1>
+                    </div>
+                    <div class="kasmir">
+                        <h1 class="desh">Kasmir</h1>
+                    </div>
+                </div>
+                <div class="two-country">
+                    <div class="bangladesh">
+                        <h1 class="desh">Bangladesh</h1>
+                    </div>
+                    <div class="bandorbon">
+                        <h1 class="desh">Bandarban</h1>
+                    </div>
+                </div>
+               <section class="choose-us">
+                <h1>Why Choose Us</h1>
+                <p class="description">dolor sit amet consectetur.Diam volutpat neque habitasse pharetra odio sit massa.<br> Sodales dictumst nec nibh pellentesque.</p>
+               </section> 
+               <div class="hotels">
+                <div class="handpicked">
+<h1>Handpicked Hotels</h1>
+
+<p>Amet consectetur.Vulputate commodo felis molestine risus ornare <br> nulla amet et.Libero commodo sagittis dignissim adipiscing quis.<br> habitasse adipiscing risus natoque aliquet.</p>
+                </div>
+                <div class="world">
+<h1>world Class Service</h1>
+<p>Amet consectetur.Vulputate commodo felis molestine risus ornare <br> nulla amet et.Libero commodo sagittis dignissim adipiscing quis.<br> habitasse adipiscing risus natoque aliquet.</p>
+                </div> 
+               </div>
+
+               <div class="best">
+                <h1>Best Price Guarantee</h1>
+                <p>Amet consectetur.Vulputate commodo felis molestine risus ornare <br> nulla amet et.Libero commodo sagittis dignissim adipiscing quis.<br> habitasse adipiscing risus natoque aliquet.</p>
+               </div>
+
+               <section class="banner">
+                <h1>Deals & Discounts</h1>
+                <p class="description">Dolor sit amet consecteture. Diam volutpat neque habitasse pharetra odio sit <br> massa.Sodales dictumst nec nibh pellentesque.</p>
+               </section>
+
+               <section class="img-edit">
+                
+                    
+                    
+                    <div class="figure">
+                    <h1>Tour To Satorini</h1>
+                    <p>Amet consectetur.Vulputate commodo felis<br> molestine risus ornare nulla amet et.Libero commodo sagittis<br>  dignissim adipiscing quis.habitasse adipiscing .</p>
+                    <h1 class="primary">Price:$1300-$1500</h1>
+                    <button class="btn-primary">Book Now</button>
+</div>
+               </section>
+<section class="img-editor">
+
+<div class="figure-2">
+                    <h1>Tour To Satorini</h1>
+                    <p>Amet consectetur.Vulputate commodo felis<br> molestine risus ornare nulla amet et.Libero commodo sagittis<br>  dignissim adipiscing quis.habitasse adipiscing .</p>
+                    <h1 class="primary">Price:$1300-$1500</h1>
+                    <button class="btn-primary">Book Now</button>
+</div>
+</section>
+<section class="img-edit">
+                
+                    
+                    
+    <div class="figure">
+    <h1>Tour To Satorini</h1>
+    <p>Amet consectetur.Vulputate commodo felis<br> molestine risus ornare nulla amet et.Libero commodo sagittis<br>  dignissim adipiscing quis.habitasse adipiscing .</p>
+    <h1 class="primary">Price:$1300-$1500</h1>
+    <button class="btn-primary">Book Now</button>
+</div>
+</section>
+
+               <div class="repalace">
+                <div class="perfect">
+                    <h1>A Simple Perfect Place <br> To Get Lost</h1>
+                    <p>Amet consectetur.Vulputate commodo felis molestine risus ornare <br>amet et.Libero commodo sagittis dignissim adipiscing quis.
+                        <ul>
+                            <li>adipisicing ornare pellentesque mauris volutpat tortor vitae <br>platea porta lacus.Lectus suspendisse nullam</li>
+
+
+                            <li>adipisicing ornare pellentesque mauris volutpat tortor vitae <br>platea porta lacus.Lectus suspendisse nullam</li>
+                        </ul>
+                    </p>
+                    <button class="btn-primary">See More</button>
+                </div>
+                <div class="bd">
+                    <img src="Images/Group 40089.png" alt="">
+                </div>
+               </div>
+
+<div class="letter">
+<div class="newsletter">
+    <h1>Newsletter</h1>
+    <p>Get Your daily dose of travel news & tips.Sign<br>
+        up today!</p>
+
+
+        <form class="contact" action="">
+            <input type="text" placeholder="Enter your Name">
+            <input type="email" name="" placeholder="Enter Your Email">
+            
+        </form>
+        <button class="subscribe">subscribe</button>
+    
+
+
+
+
+</div>
+<div class="docs">
+   <button class="red"> Travel.com<br>
+    Save up to 70%</button>
+</div>
+
+    </div>
+        </Main>
+    
+    <footer>
+        <div class="propet">
+            <div class="consapt">
+            <div class="head-img">
+            <img src="Images/Group 40071 (2).png" alt="">
+    <h3 class="nav-title">  Hero <span class="travel">Travel</span></h3>
+    </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur .Nulla sit viverra morbi vitae blandit orci potenti vulputate .leo<br> erat maecenas vitae elementum ultricies nullam.</p>
+    <div class="footer">
+        <img src="Images/Twitter.png" alt="">
+    
+    
+        <img src="Images/Facebook.png" alt="">
+    
+    
+        <img src="Images/Instagram.png" alt="">
+    </div>
+
+
+
+
+
+    <h5>2017,All Rights Reserved.</h5>
+    </div>
+
+
+    
+       
+    
+    </footer>
+</body>
+</html>
